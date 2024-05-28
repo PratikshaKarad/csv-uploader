@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSV Uploader</title>
+  <style>
+    body {
+      background-image: url('images/pexels-photo.jpeg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: #333; /* Ensure text is readable against the background */
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      align-items: center;
+    }
+
+    h1, h2, form, table {
+      background-color: rgba(255, 255, 255, 0.8); /* Add a white background with some transparency */
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+
+    input, button {
+      padding: 10px;
+      margin: 5px;
+    }
+
+    button {
+      background-color: #6072e6;
+      border-radius: 10px;
+      color: #fff;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #332bca; /* Darker shade of blue on hover */
+    }
+
+    #fileList {
+      list-style: none;
+      padding: 0;
+    }
+
+    #fileList li {
+      cursor: pointer;
+      margin-bottom: 10px;
+      padding: 10px;
+      background-color: #f0f0f0;
+      border-radius: 4px;
+      transition: background-color 0.3s;
+    }
+
+    #fileList li:hover {
+      background-color: #e0e0e0;
+    }
+
+    #searchbox{
+      text-align: center;
+    }
+
+  </style>
+</head>
+<body>
+  <h1>CSV Uploader</h1>
+  <form id="uploadForm" enctype="multipart/form-data">
+    <input type="file" name="csvfile" accept=".csv" required><br>
+    <button type="submit">Upload</button>
+  </form>
+
+  <h2>Uploaded Files</h2>
+  <ul id="fileList"></ul>
+
+  <h2>File Data</h2>
+  <div id="searchbox">
+  <input type="text" id="searchBox" placeholder="Search...">
+  </div>
+  <table id="dataTable">
+    <thead id="tableHeader"></thead>
+    <tbody id="tableBody"></tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
