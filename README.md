@@ -29,3 +29,7 @@ A web application to upload, display, search, sort, and paginate CSV files dynam
 
 ![Screenshot (53)](https://github.com/PratikshaKarad/csv-uploader/assets/111880908/045b928d-1b0f-47eb-bba3-6b2fe83eba89)
 
+
+
+
+![Screenshot (54)](https://github.com/PratikshaKarad/csv-uploader/assets/111880908/23887bf9-1057-442c-b840-a8272afd8286)
